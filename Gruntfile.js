@@ -141,4 +141,4 @@ module.exports = function(grunt) {
     grunt.log.writeln("2. release");
     grunt.log.writeln("  $> grunt release (major/minor/patch)");
   });
-}
+};
