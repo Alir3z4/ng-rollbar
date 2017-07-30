@@ -104,14 +104,14 @@ module.exports = function(grunt) {
             waiting = false;
           }
 
-          if(!waiting) { newFileContent += line + "\n" }
+          if(!waiting) { newFileContent += line + "\n";}
 
           if(line.indexOf("/* rollbar client lib start */") > -1) {
-            grunt.log.writeln("found /* rollbar client lib start */")
-            grunt.log.writeln("inserting new lib snippet")
+            grunt.log.writeln("found /* rollbar client lib start */");
+            grunt.log.writeln("inserting new lib snippet");
             waiting = true;
-            newFileContent += '        // ' + url + "\n"
-            newFileContent += '        ' + snippet + "\n"
+            newFileContent += '        // ' + url + "\n";
+            newFileContent += '        ' + snippet + "\n";
           }
         });
 
